@@ -14,9 +14,7 @@ const {PORT = 3000} = process.env;
 const app = express();
 
 const allowedOrigin = [
-    'https://www.chilldev.chickenkiller.com',
-    'https://chilldev.chickenkiller.com',
-    'https://api.chilldev.chickenkiller.com',
+    'https://arrounf-frontend.vercel.app/',
     'http://localhost:3000'
 ]
 
@@ -26,7 +24,7 @@ const limiter = rateLimit({
     message: 'demasiadas solicitudes desde esta IP'
 })
 
-mongoose.connect('mongodb://localhost:27017/aroundb');
+mongoose.connect(process.env.MONGO_DB);
 
 app.use(helmet());
 

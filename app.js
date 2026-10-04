@@ -14,7 +14,8 @@ const {PORT = 3000} = process.env;
 const app = express();
 
 const allowedOrigin = [
-    'https://arrounf-frontend.vercel.app/',
+    'https://arrounf-frontend.vercel.app',
+    'http://localhost:5173',
     'http://localhost:3000'
 ]
 

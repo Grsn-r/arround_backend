@@ -1,0 +1,9 @@
+.log
+node_modules
+.npm
+.Ds_Store
+.idea
+.vscode
+.md
+.env
+*.log
